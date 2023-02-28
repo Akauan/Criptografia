@@ -2,8 +2,8 @@ from os import system,name
 from urllib import request
 
 #Lista com o nome e endereço dos arquivos
-arquivos = {'cesar.py' : 'https://raw.githubusercontent.com/Akauan/Criptografia/main/cesar.py',
-            'transposicao.py' : 'https://raw.githubusercontent.com/Akauan/Criptografia/main/transposicao.py'}
+arquivos = {'cesar.py' : 'https://raw.githubusercontent.com/Akauan/Criptografia/2f5db0709d863fba68f9368dc8ab81b067224d3f/cesar.py',
+            'transposicao.py' : 'https://raw.githubusercontent.com/Akauan/Criptografia/2f5db0709d863fba68f9368dc8ab81b067224d3f/transposicao.py'}
 
 #For para baixar os aquivos
 for item in arquivos.keys():
@@ -27,7 +27,7 @@ def menuGeral():
 =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
 1 - Cifra de Cesar
 2 - Cifra de Transposição
-3 - Ajuda
+8 - Ajuda
 0 - Sair''')
         case = input('> ')
 
@@ -48,12 +48,12 @@ def menuGeral():
             
             pass
 
-        elif case == '3':
+        elif case == '8':
             apagar()
             print('''=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
               Akauan Cifras
 =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
-                | Ajuda |
+             | Ajuda Geral|
 1.Cifra de Cesar: 
     É um tipo de cifra de substituição
 na qual cada letra do texto é substituída
@@ -84,8 +84,8 @@ def menuCesar():
 1 - Cifrar
 2 - Descifrar
 3 - Descifrar cifra anterior
-4 - Ajuda
-5 - Voltar
+8 - Ajuda
+9 - Voltar
 0 - Sair''')
         case = input('> ')
 
@@ -125,10 +125,34 @@ def menuCesar():
                 print()
                 input('Aperte enter para continuar...')
 
-        elif case == '4':
+        elif case == '8':
+            print('''=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+              Akauan Cifras
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+             | Cesar Ajuda |
+1.Cifrar: 
+    Você vai dizer qual o texto plano 
+(String) que será cifrado, e após isso 
+dirá qual a chave (int) que será usada 
+para cifrar o texto.
+
+2.Descifrar: 
+    Você irá informar o texto cifrado 
+(String) que deseja descifar e logo em 
+seguida dirá qual a chave (int) que foi 
+usada para fazer essa cifra.
+
+3.Descifrar cifra anterior:
+    Essa opção descifra a ultima frase 
+cifrada, ou seja, ela pega a chave e a 
+palavra cifrada anterior e mostra a 
+palavra descifrada correspondente. 
+Nota: Se não houver uma cifra anterior 
+ele apenas cancela a operação.
+                  ''')
             input('Em breve...')
 
-        elif case == '5':
+        elif case == '9':
             break
 
 #Função do menu de Cifra de transposição
@@ -140,8 +164,8 @@ def menuTransposicao():
 =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
 1 - Cifrar
 2 - Descifrar
-3 - Ajuda
-4 - Voltar
+8 - Ajuda
+9 - Voltar
 0 - Sair''')
         case = input('> ')
 
@@ -167,11 +191,11 @@ def menuTransposicao():
                 print()
                 input('Aperte enter para continuar...')
             
-        elif case == '3':
+        elif case == '8':
             input('Em breve...')
             pass
 
-        elif case == '4':
+        elif case == '9':
             break
 
 if __name__ == '__main__':
