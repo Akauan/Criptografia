@@ -150,7 +150,7 @@ palavra descifrada correspondente.
 Nota: Se não houver uma cifra anterior 
 ele apenas cancela a operação.
                   ''')
-            input('Em breve...')
+            input('Aperte enter para continuar...')
 
         elif case == '9':
             break
@@ -192,7 +192,23 @@ def menuTransposicao():
                 input('Aperte enter para continuar...')
             
         elif case == '8':
-            input('Em breve...')
+            print('''=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+              Akauan Cifras
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+         | Tramsposição Ajuda |
+1.Cifrar: 
+    Você vai dizer qual o texto plano 
+(String) que será cifrado, e após isso 
+dirá qual a chave (int ou String) que será usada 
+para cifrar o texto.
+
+2.Descifrar: 
+    Você irá informar o texto cifrado 
+(String) que deseja descifar e logo em 
+seguida dirá qual a chave (int ou String) que foi 
+usada para fazer essa cifra.
+                  ''')
+            input('Aperte enter para continuar...')
             pass
 
         elif case == '9':
