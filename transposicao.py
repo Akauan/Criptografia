@@ -11,6 +11,9 @@
 #   ====         ====   =====    =====    ====         ====    ===============    ====         ====   =====     ========   #
 #   ====         ====   =====     =====   ====         ====     =============     ====         ====   =====      =======   #
 
+def versao():
+    return 1.0
+
 def cript(string_plaintext,string_key):
     _frase = string_plaintext.replace(' ','')
     _chave = string_key
