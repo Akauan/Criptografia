@@ -1,3 +1,6 @@
+def versao():
+    return 1.0
+
 def cesar(plaintext_or_encriptex_text, int_key, encript_1_or_decript_0):
     #Modo de cifrar
     _cript = 1
